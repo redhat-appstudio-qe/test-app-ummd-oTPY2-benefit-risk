@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-om7k
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-stkm-tenant/test-app-ummd/devfile-sample-python-basic-om7k@sha256:ddf1a715d7a70ce2574e7aab7e3263fa10bea09b665b8a967ee7a3adf71f8657
+        name: my-python
+        resources: {}
+status: {}
